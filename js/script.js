@@ -18,6 +18,4 @@ if (navigator.serviceWorker) {
 
 // function description
 
-function submit() {
-  
-}
+function submit() {}
