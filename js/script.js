@@ -26,17 +26,18 @@ function update() {
   var answer = 0
   var denominator = 1
   var sign = 1
-  while (number >= count) {
-    answer = answer + 4 / denominator
+  console.log("The count is : " + count)
+  console.log("The denominator is : " + denominator)
+  while (number - 1 >= count)
+  {
+    answer = answer + (4 / denominator)
     sign = (Math.abs(denominator) / denominator) * -1
     denominator = (Math.abs(denominator) + 2) * sign
 
     count = count + 1
-    console.log("answer is : " + answer.toFixed(2))
-    console.log("denominator is : " + denominator)
-    console.log("count is : " + count)
+    console.log("The count is : " + count)
+    console.log("The denominator is : " + denominator)
   }
-  document.getElementById("answer").innerHTML =
-    "The answer is : " + answer.toFixed(2)
+  document.getElementById("answer").innerHTML = "The answer is : " + answer.toFixed(2)
   console.log("end")
 }
